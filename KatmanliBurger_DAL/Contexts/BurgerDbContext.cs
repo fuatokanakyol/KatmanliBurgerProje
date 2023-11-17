@@ -1,9 +1,10 @@
 ﻿using KatmanliBurger_DATA.Concretes;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace KatmanliBurger_DAL.Contexts
 {
-    public class BurgerDbContext:DbContext
+    public class BurgerDbContext:IdentityDbContext<AppUser, AppRole, string>
     {
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<Burger> Burgers { get; set; }
@@ -21,7 +22,7 @@ namespace KatmanliBurger_DAL.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=FUATO\\SQLEXPRESS06;Database=KatmanliBurgerDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-8JB5AHL\\SQLEXPRESS;Initial Catalog=KatmanliBurgerDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
