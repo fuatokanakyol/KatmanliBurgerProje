@@ -6,6 +6,16 @@ namespace KatmanliBurger_UI.Controllers
     {
         public IActionResult Index()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                TempData["message"] = " Logout";
+                TempData["adress"] = "/Default/Logout";
+            }
+            else
+            {
+                TempData["message"] = " Login";
+                TempData["adress"] = "/Login/Index";
+            }
             return View();
         }
     }
