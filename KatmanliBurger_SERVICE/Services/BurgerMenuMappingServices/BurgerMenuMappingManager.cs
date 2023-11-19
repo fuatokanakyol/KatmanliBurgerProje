@@ -12,6 +12,7 @@ namespace KatmanliBurger_SERVICE.Services.BurgerMenuMappingServices
 		{
 			_burgerMenuMappingDal = burgerMenuMappingDal;
 		}
+
 		public void Create(IEnumerable<BurgerMenuMapping> entities)
 		{
 			_burgerMenuMappingDal.Create(entities);

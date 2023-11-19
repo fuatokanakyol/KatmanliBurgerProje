@@ -1,6 +1,11 @@
 ﻿using KatmanliBurger_DATA.Concretes;
+using KatmanliBurger_DATA.DomainModels;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
+using System.Reflection;
+using KatmanliBurger_DAL.Configurations.Extensions;
+using KatmanliBurger_DAL.Migrations;
 
 namespace KatmanliBurger_DAL.Contexts
 {
@@ -19,15 +24,21 @@ namespace KatmanliBurger_DAL.Contexts
         public DbSet<MenuOrderMapping> MenuOrders { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderByProductMapping> OrderByProducts { get; set; }
+        public DbSet<ParameterDetail> ParameterDetails { get; set; }
+        public DbSet<ParameterType> ParameterTypes { get; set; }
+        public DbSet<CustomerMessage> CustomerMessages { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=FUATO\\SQLEXPRESS06;Initial Catalog=BurgerShopDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            optionsBuilder.UseSqlServer("Data Source=FUATO\\SQLEXPRESS06;Initial Catalog = KatmanliBurgerDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
             base.OnModelCreating(builder);
         }
     }
 }
+
