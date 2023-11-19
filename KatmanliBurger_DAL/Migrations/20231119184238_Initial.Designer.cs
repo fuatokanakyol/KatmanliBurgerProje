@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KatmanliBurger_DAL.Migrations
 {
     [DbContext(typeof(BurgerDbContext))]
-    [Migration("20231118211805_Initial3")]
-    partial class Initial3
+    [Migration("20231119184238_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -337,28 +337,28 @@ namespace KatmanliBurger_DAL.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 11, 19, 0, 18, 5, 111, DateTimeKind.Local).AddTicks(5344),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 42, 38, 755, DateTimeKind.Local).AddTicks(5384),
                             Name = "İçecek",
                             Status = 1
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 11, 19, 0, 18, 5, 111, DateTimeKind.Local).AddTicks(5346),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 42, 38, 755, DateTimeKind.Local).AddTicks(5386),
                             Name = "Patates",
                             Status = 1
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 11, 19, 0, 18, 5, 111, DateTimeKind.Local).AddTicks(5347),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 42, 38, 755, DateTimeKind.Local).AddTicks(5387),
                             Name = "Tatlı",
                             Status = 1
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 11, 19, 0, 18, 5, 111, DateTimeKind.Local).AddTicks(5349),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 42, 38, 755, DateTimeKind.Local).AddTicks(5389),
                             Name = "Atıştırmalık",
                             Status = 1
                         });
@@ -660,42 +660,42 @@ namespace KatmanliBurger_DAL.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 11, 19, 0, 18, 5, 111, DateTimeKind.Local).AddTicks(5570),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 42, 38, 755, DateTimeKind.Local).AddTicks(5656),
                             Status = 1,
                             TypeName = "About"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 11, 19, 0, 18, 5, 111, DateTimeKind.Local).AddTicks(5572),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 42, 38, 755, DateTimeKind.Local).AddTicks(5658),
                             Status = 1,
                             TypeName = "Contact"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 11, 19, 0, 18, 5, 111, DateTimeKind.Local).AddTicks(5574),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 42, 38, 755, DateTimeKind.Local).AddTicks(5659),
                             Status = 1,
                             TypeName = "General"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 11, 19, 0, 18, 5, 111, DateTimeKind.Local).AddTicks(5576),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 42, 38, 755, DateTimeKind.Local).AddTicks(5660),
                             Status = 1,
                             TypeName = "Exception"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 11, 19, 0, 18, 5, 111, DateTimeKind.Local).AddTicks(5577),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 42, 38, 755, DateTimeKind.Local).AddTicks(5672),
                             Status = 1,
                             TypeName = "UIMessagges"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 11, 19, 0, 18, 5, 111, DateTimeKind.Local).AddTicks(5579),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 42, 38, 755, DateTimeKind.Local).AddTicks(5673),
                             Status = 1,
                             TypeName = "AdminMessagges"
                         });

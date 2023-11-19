@@ -1,15 +1,13 @@
-﻿using KatmanliBurger_DATA.Concretes;
+﻿using KatmanliBurger_DAL.Migrations;
+using KatmanliBurger_DATA.Concretes;
 using KatmanliBurger_DATA.DomainModels;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Emit;
 using System.Reflection;
-using KatmanliBurger_DAL.Configurations.Extensions;
-using KatmanliBurger_DAL.Migrations;
 
 namespace KatmanliBurger_DAL.Contexts
 {
-    public class BurgerDbContext:IdentityDbContext<AppUser, AppRole, string>
+	public class BurgerDbContext:IdentityDbContext<AppUser, AppRole, string>
     {
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<Burger> Burgers { get; set; }

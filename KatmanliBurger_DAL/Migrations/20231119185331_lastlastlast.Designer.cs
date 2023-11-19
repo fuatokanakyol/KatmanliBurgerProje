@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KatmanliBurger_DAL.Migrations
 {
     [DbContext(typeof(BurgerDbContext))]
-    [Migration("20231118185846_Initial")]
-    partial class Initial
+    [Migration("20231119185331_lastlastlast")]
+    partial class lastlastlast
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -337,31 +337,69 @@ namespace KatmanliBurger_DAL.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 11, 18, 21, 58, 46, 518, DateTimeKind.Local).AddTicks(5598),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7707),
                             Name = "İçecek",
                             Status = 1
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 11, 18, 21, 58, 46, 518, DateTimeKind.Local).AddTicks(5599),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7708),
                             Name = "Patates",
                             Status = 1
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 11, 18, 21, 58, 46, 518, DateTimeKind.Local).AddTicks(5601),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7709),
                             Name = "Tatlı",
                             Status = 1
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 11, 18, 21, 58, 46, 518, DateTimeKind.Local).AddTicks(5602),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7710),
                             Name = "Atıştırmalık",
                             Status = 1
                         });
+                });
+
+            modelBuilder.Entity("KatmanliBurger_DATA.Concretes.CustomerMessage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CustomerEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CustomerName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CustomerPhone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CustomerMessages");
                 });
 
             modelBuilder.Entity("KatmanliBurger_DATA.Concretes.Garniture", b =>
@@ -617,6 +655,50 @@ namespace KatmanliBurger_DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ParameterTypes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7917),
+                            Status = 1,
+                            TypeName = "About"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7919),
+                            Status = 1,
+                            TypeName = "Contact"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7920),
+                            Status = 1,
+                            TypeName = "General"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7921),
+                            Status = 1,
+                            TypeName = "Exception"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7922),
+                            Status = 1,
+                            TypeName = "UIMessagges"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7923),
+                            Status = 1,
+                            TypeName = "AdminMessagges"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

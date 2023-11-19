@@ -335,28 +335,28 @@ namespace KatmanliBurger_DAL.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 11, 19, 14, 36, 18, 545, DateTimeKind.Local).AddTicks(5557),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7707),
                             Name = "İçecek",
                             Status = 1
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 11, 19, 14, 36, 18, 545, DateTimeKind.Local).AddTicks(5558),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7708),
                             Name = "Patates",
                             Status = 1
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 11, 19, 14, 36, 18, 545, DateTimeKind.Local).AddTicks(5559),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7709),
                             Name = "Tatlı",
                             Status = 1
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 11, 19, 14, 36, 18, 545, DateTimeKind.Local).AddTicks(5560),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7710),
                             Name = "Atıştırmalık",
                             Status = 1
                         });
@@ -658,42 +658,42 @@ namespace KatmanliBurger_DAL.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 11, 19, 14, 36, 18, 545, DateTimeKind.Local).AddTicks(5802),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7917),
                             Status = 1,
                             TypeName = "About"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 11, 19, 14, 36, 18, 545, DateTimeKind.Local).AddTicks(5804),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7919),
                             Status = 1,
                             TypeName = "Contact"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 11, 19, 14, 36, 18, 545, DateTimeKind.Local).AddTicks(5805),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7920),
                             Status = 1,
                             TypeName = "General"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 11, 19, 14, 36, 18, 545, DateTimeKind.Local).AddTicks(5806),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7921),
                             Status = 1,
                             TypeName = "Exception"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 11, 19, 14, 36, 18, 545, DateTimeKind.Local).AddTicks(5807),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7922),
                             Status = 1,
                             TypeName = "UIMessagges"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 11, 19, 14, 36, 18, 545, DateTimeKind.Local).AddTicks(5808),
+                            CreatedDate = new DateTime(2023, 11, 19, 21, 53, 31, 465, DateTimeKind.Local).AddTicks(7923),
                             Status = 1,
                             TypeName = "AdminMessagges"
                         });
